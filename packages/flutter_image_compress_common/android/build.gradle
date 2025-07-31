@@ -39,15 +39,19 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    kotlinOptions {
-        jvmTarget = '17'
-    }
+    // kotlinOptions {
+    //     jvmTarget = '17'
+    // }
 
-    compileOptions {
-        // Sets Java compatibility to Java 11
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
+    // compileOptions {
+    //     // Sets Java compatibility to Java 11
+    //     sourceCompatibility JavaVersion.VERSION_17
+    //     targetCompatibility JavaVersion.VERSION_17
+    // }
+}
+
+kotlin {
+    jvmToolchain(17)
 }
 
 dependencies {
